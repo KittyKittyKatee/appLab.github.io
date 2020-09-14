@@ -1,0 +1,119 @@
+@import "../variables";
+
+.pricing
+    &__wrap
+        padding-top: 130px
+    &__title
+        max-width: 450px
+        text-align: center
+        margin-right: auto
+        margin-left: auto
+    &__subtitle
+        max-width: 630px
+        text-align: center
+        margin-right: auto
+        margin-left: auto
+    &__elems
+        margin-top: 100px
+        list-style: none
+    &__tabs
+        height: 53px
+        border-radius: 27px
+        border: 2px solid rgb(235, 235, 235)
+        width: 280px
+        position: relative
+        margin: 60px auto 40px
+    &__tab
+        width: 138px
+        cursor: pointer
+        transition: all 0.2s
+        &:not(.active):hover
+            color: $blue
+        &.active
+            color: $white
+    &__tab-bg
+        position: absolute
+        height: 45px
+        width: 138px
+        border-radius: 27px
+        background-color: $blue
+        z-index: -1
+        margin: 0 1px 1px
+    &__elem
+        display: flex
+        flex-direction: column
+        align-items: center
+        text-align: center
+        .elem-w-icon
+            &__icon
+                margin-bottom: 30px
+                margin-right: 0
+                img
+                    left: 0
+
+.rate-card
+    width: 314px
+    height: 100%
+    border: 2px solid rgb(235, 235, 235)
+    border-radius: 9px
+    box-sizing: border-box 
+    padding: 0
+    margin-right: 15px
+    margin-left: 15px
+    cursor: pointer
+    transition: all 0.5s
+    &:hover
+        border-color: $white 
+        box-shadow: 3.837px 54.866px 62px 0px rgba(144, 163, 177, 0.18);
+    &__top
+        padding: 70px 40px 40px
+        border-top-left-radius: 9px
+        border-top-right-radius: 9px
+        overflow: hidden
+        background-image: linear-gradient( 0deg, rgb(244,247,249) 0%, rgb(251,252,253) 100%)
+    &__period
+        font-size: 18px
+        font-weight: 400
+        padding-bottom: 5px
+        color: $light-gray
+        text-align: center
+    &__price-count
+        font-size: 60px
+        line-height: 60px
+        font-weight: 600
+        color: $dark-blue
+        text-align: center
+    &__price
+        margin-bottom: 20px
+    &__title
+        font-size: 20px
+        line-height: 20px
+        font-weight: 600
+        color: $dark-blue
+        text-align: center
+    &__subtitle
+        color: $light-gray
+        font-weight: 600
+        text-align: center
+        margin: 0
+    &__main
+        padding: 40px 40px 25px
+    &__btn
+        margin: auto
+    &__link
+        margin-top: 35px
+        line-height: 14px
+    &__opportunities
+        list-style: none
+        min-height: 170px
+        padding: 0
+        margin: 0
+        margin-bottom: 40px
+        li
+            text-align: center
+            color: $light-gray
+            font-size: 16px
+            font-weight: 600
+            margin-bottom: 25px
+            &:last-child
+                margin-bottom: 0

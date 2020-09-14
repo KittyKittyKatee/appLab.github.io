@@ -1,0 +1,38 @@
+@import "../variables";
+
+.ultimate
+    &__wrap
+        padding-top: 130px
+    &__title
+        max-width: 340px
+    &__subtitle
+        max-width: 400px
+    &__content
+        margin-left: 45px
+    &__elems
+        margin-top: 60px
+        list-style: none
+        padding: 0
+    &__img
+        position: relative
+        img
+            position: absolute
+            &:nth-child(1)
+                top: 100px
+                left: 150px
+                z-index: 10
+            &:nth-child(2)
+                top: 100px
+                left: -50px
+                z-index: 5
+            &:nth-child(3)
+                top: 30px
+                left: 0
+                z-index: 0
+    &__elem
+        .elem-w-icon
+            &__icon
+                margin-bottom: 30px
+                margin-right: 0
+                img
+                    left: 0

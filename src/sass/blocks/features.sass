@@ -1,0 +1,66 @@
+@import "../variables";
+
+.features
+    padding-top: 50px
+    &__img
+        margin-left: -50px
+        position: relative
+    &__bg
+        position: absolute
+        top: 60%
+        left: 45%
+        transform: translate(-50%, -50%)
+        z-index: -1
+    &__title
+        max-width: 300px
+    &__text
+        max-width: 430px
+    &__elems
+        max-width: 400px
+
+        margin: 0
+        padding: 0
+        margin-top: 75px
+        list-style: none
+.elem-w-icon
+    margin-bottom: 45px
+    img
+        position: absolute
+    &:hover
+        .elem-w-icon__icon
+            img
+                animation: little-shake 0.8s cubic-bezier(.36,.07,.19,.97) both
+                transform: translate3d(0, 0, 0);
+    &:last-child
+        margin-bottom: 0
+    &__icon
+        margin-right: 30px
+        height: 88px
+        width: 88px
+        display: block
+        position: relative
+    &__content
+        max-width: 260px
+
+
+@keyframes little-shake
+    10%
+        transform: translate3d(-1px, 0, 0);
+    20%
+        transform: translate3d(2px, 0, 0);
+    30%
+        transform: translate3d(-4px, 0, 0);
+    40%
+        transform: translate3d(4px, 0, 0);
+    50%
+        transform: translate3d(-4px, 0, 0);
+    60%
+        transform: translate3d(4px, 0, 0);
+    70%
+        transform: translate3d(-4px, 0, 0);
+    80%
+        transform: translate3d(2px, 0, 0);
+    90%
+        transform: translate3d(-1px, 0, 0);
+    100%
+        transform: translate3d(2px, 0, 0);

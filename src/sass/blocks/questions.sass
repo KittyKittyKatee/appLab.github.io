@@ -1,0 +1,45 @@
+@import "../variables";
+
+.questions
+    &__wrap
+        padding-top: 130px
+        padding-bottom: 1000px
+    &__title
+        text-align: center
+        margin-right: auto
+        margin-left: auto
+    &__subtitle
+        max-width: 630px
+        text-align: center
+        margin-right: auto
+        margin-left: auto
+        margin-bottom: 60px
+
+
+.question
+    background-color: $gray-bg
+    padding: 0 45px 0
+    margin-bottom: 10px
+    box-sizing: border-box
+    cursor: pointer
+    &__top
+        height: 65px
+    &__title
+        padding-top: 15px
+        color: $dark-blue
+        font-size: 20px
+        font-weight: 600
+        margin-bottom: 
+    &__minus
+        display: none
+    p
+        display: none
+        margin-top: 30px
+        color: $gray-text
+        font-weight: 500
+    &.active
+        padding: 50px 45px 85px
+        .question__plus
+            display: none
+        .question__minus
+            display: block

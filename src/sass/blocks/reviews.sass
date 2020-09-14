@@ -1,0 +1,67 @@
+@import "../variables";
+
+.reviews
+    &__wrap
+        padding-top: 130px
+    &__title
+        max-width: 450px
+    &__subtitle
+        max-width: 630px
+    &__reviews
+        position: relative
+    &__arrows
+        position: absolute
+        bottom: 20px;
+        right: -100px;
+    &__img
+        img
+            position: absolute
+            top: 14%
+    &__map
+        left: -200px
+    &__people
+        left: -180px;
+    &__arrow
+        border: 2px solid rgb(239, 243, 248)
+        width: 46px;
+        height: 46px;
+        border-radius: 23px
+        cursor: pointer
+        transition: all 0.3s
+        &:hover
+            background-color: rgb(239, 243, 248)
+            transform: translateX(5%)
+        &--left
+            margin-right: 20px
+            &:hover
+                transform: translateX(-5%)
+            img
+                transform: rotate(-180deg)
+    .slick-list
+        overflow: hidden
+    .slick-track
+        display: flex
+.review
+    &__rating
+        margin-top: 20px
+        margin-bottom: 30px
+    &__title
+        font-size: 20px
+        font-weight: 600
+        color: $dark-blue
+        margin-bottom: 35px
+    p
+        font-weight: 500
+        color: $gray-text
+        margin-bottom: 40px
+    &__avatar
+        margin-right: 30px
+    &__name
+        font-size: 18px
+        font-weight: 600
+        color: $dark-blue
+    &__company
+        font-size: 18px
+        font-weight: 500
+        color: $gray-text
+

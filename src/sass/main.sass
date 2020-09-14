@@ -1,0 +1,107 @@
+@import "variables"
+@import "default"
+@import "fonts"
+
+
+
+
+body
+  background: $white
+  font-size: 18px
+  line-height: 22px
+  font-weight: 16px
+  color: $black
+  font-family: 'Poppins'
+  @media (max-width: 500px)
+    min-width: 500px
+    
+
+.wrap
+  max-width: 1200px
+  width: 100%
+  padding: 0 15px
+  margin: 0 auto
+
+.title-h1
+  font-size: 60px
+  line-height: 75px
+  font-weight: 600
+  color: $dark-blue
+  margin: 0
+  margin-bottom: 20px
+
+.btn-main
+  font-size: 16px
+  font-weight: 700
+  height: 57px
+  background-color: $blue
+  appearance: none
+  box-shadow: none
+  border: none
+  outline: none
+  color: $white
+  padding: 0 35px 2px
+  box-sizing: border-box
+  min-width: 170px
+  border-radius: 28px
+  cursor: pointer
+  transition: all 0.2s
+  &:hover
+    box-shadow: 0px 8px 12.75px 2.25px rgba(37, 0, 249, 0.1)
+    transition: all 0.2s
+
+
+
+.title-h2
+  font-size: 36px
+  line-height: 46px
+  font-weight: 600
+  color: $dark-blue
+  margin: 0
+  margin-bottom: 20px
+  &--largest
+    font-size: 40px
+
+.title-h3
+  font-size: 20px
+  line-height: 20px
+  font-weight: 600
+  color: $dark-blue
+  margin: 0
+  margin-bottom: 10px
+  &--pink
+    color: $pink
+  &--blue
+    color: $light-blue
+  &--green
+    color: $green
+
+.text, .subtitle
+  font-size: 16px
+  line-height: 26px
+  font-weight: 400
+  color: $gray-text
+
+.link
+  font-size: 16px
+  line-height: 26px
+  font-weight: 400
+  color: $blue
+  text-decoration: none
+
+  transition: all 0.2s
+  &:hover
+    color: lighten($blue, 10)
+
+
+@import "blocks/header"
+@import "blocks/banner"
+@import "blocks/companies"
+@import "blocks/features"
+@import "blocks/jackpots"
+@import "blocks/code-integration"
+@import "blocks/why"
+@import "blocks/ultimate"
+@import "blocks/pricing"
+@import "blocks/reviews"
+@import "blocks/questions"
